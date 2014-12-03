@@ -1,0 +1,94 @@
+/* Custom CSS File
+   For Grace Church 2014 Annual Report
+   Developed by RG Creative
+   http://discoverRG.com
+
+   Hand-Coded with Love by Randy Greene
+   @sobecreation
+*/
+
+/* REFERENCES
+   
+   // Primary Colors
+      Blue: #0058a9;
+      Red: #B61B12;
+      Dark Blue: #09355C;
+      White: #fff;
+      Light Gray: #cbcbcb;
+      Dark Gray: #919090;
+      Black: #181818;
+*/
+
+/* UNIVERSAL RESETS */
+html {
+	background: #0058a9;
+	color: #fff;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+body {
+	background: transparent;
+}
+h2 {
+	max-width: 640px;
+	margin: 0 auto 25px auto;
+	font-size: 48px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.container {
+	width: 100%;
+	padding: 100px;
+	color: #fff;
+	text-align: center;
+	box-sizing: border-box;
+}
+.row {
+	margin-bottom: 25px;
+}
+.row:last-of-type {
+	margin-top: 0;
+}
+/* Create responsive video embeds */
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+/* Center text with it's related image */
+.info-text {
+	position: relative;
+	height: 480px;
+}
+.info-wrapper {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* INDIVIDUAL SECTION STYLES */
+
+#intro {
+	padding: 0 150px 100px 150px;
+}
+
+#sundays {
+	background: rgba(255,255,255,0.9);
+	background-image: url('../img/bg-worship-set.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	color: #cbcbcb; /* Light Gray */
+}
+
+#holidays {
+	background: #B61B12; /* Red */
+}
