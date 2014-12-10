@@ -120,9 +120,6 @@ h2 {
 #gx-sidemenu.tiny ul li .arrow {
 	right: 15%;
 }
-#gx-sidemenu * .icon {
-	font-family: entypo !important;
-}
 .gx-sidemenu-inner {
 	float: left;
 	width: 100%;
@@ -205,15 +202,6 @@ h2 {
 #gx-sidemenu ul li.active-link a {
 	color: #BBB;
 }
-.gx-menu-open {
-	position: absolute;
-	top: 50px;
-	left: 5%;
-	color: #cbcbcb;
-	text-decoration: none;
-	font-size: 100px;
-	font-family: 'entypo' !important;
-}
 #gx-sidemenu-tip {
 	background: rgba(0,0,0,0.9);
 	border: 1px solid #000;
@@ -223,7 +211,6 @@ h2 {
 	-ms-border-radius: 5px;
 	padding: 10px;
 	color: #fff;
-	font-family: Raleway;
 	font-size: 14px;
 }
 .iScrollIndicator {
