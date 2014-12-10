@@ -126,7 +126,6 @@ h2 {
 .gx-sidemenu-inner {
 	float: left;
 	width: 100%;
-	background: transparent url('images/gmenu_glow.png') no-repeat center left;
 	position: relative;
 	padding-top: 0px;
 	overflow: hidden;
@@ -234,27 +233,13 @@ h2 {
 .gx-menu-open.list {
 	position: fixed;
 	top: 25px;
-	height: 50px;
 	left: 25px;
 	right: auto;
-	font-size: 5em;
-	line-height: 0px;
-}
-.gx-menu-open.list:hover,
-.gx-menu-open.list:focus {
-	color: inherit;
-	text-decoration: none;
-}
-.gx-menu-open.share {
-	right: 3%;
-	left: auto;
-	top: 0px;
-	height: 40px;
-	line-height: 10px;
-}
-
-.gx-menu-open.mobile {
-	line-height: 0.6em;
+	height: 48px;
+	width: 48px;
+	background: url('images/icon-menu.png') no-repeat center center;
+	background-size: contain;
+	cursor: default;
 }
 
 #wrapper {
