@@ -1,0 +1,153 @@
+/* SIDEMENU STYLES */
+
+#gx-sidemenu {
+	position: fixed;
+	background: #181818;
+	width: 15%;
+	min-width: 280px;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 99999999;
+}
+#gx-sidemenu.tiny {
+	min-width: 50px;
+	width: 70px;
+}
+#gx-sidemenu.tiny li {
+	height: 48px;
+	padding-left: 0;
+	width: 100%;
+}
+#gx-sidemenu.tiny li.divider {
+	height: 2px;
+	width: 100%;
+}
+#gx-sidemenu.tiny a .text {
+	display: none;
+}
+#gx-sidemenu.tiny li .icon {
+	width: 90% !important;
+	height: 50px !important;
+	display: inline;
+}
+#gx-sidemenu.tiny ul li .arrow {
+	right: 15%;
+}
+.gx-sidemenu-inner {
+	float: left;
+	width: 100%;
+	position: relative;
+	padding-top: 0px;
+	overflow: hidden;
+	z-index: 9999998;
+}
+.gx-sidemenu-inner div.scroll {
+	float: left;
+	width: 100%;
+	position: relative;
+	z-index: 9999999;
+}
+#gx-sidemenu .divider {
+	width: 100%;
+	height: 2px;
+	background: url('images/gmenu_divider.png') repeat-x top;
+	clear: both;
+	float: left;
+	padding: 0;
+	margin: 0 0 0px 0;
+}
+.gx-sidemenu-inner ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+	width: 100%;
+	padding-top: 0px;
+}
+.gx-sidemenu-inner ul li {
+	float: left;
+	width: 100%;
+	padding: 0;
+	clear: both;
+	margin: 0 !important;
+	position: relative;
+}
+.gx-sidemenu-inner ul li .icon {
+	float: left;
+	width: 20%;
+	height: 45px !important;
+	padding: 0;
+}
+
+
+.gx-sidemenu-inner ul li:hover {
+	background: rgba(0,0,0,0.6);
+}
+.gx-sidemenu-inner ul li .text {
+	width: 65%;
+	min-height: 20px;
+	padding: 12px 5% 12px 10%;
+	background: url('images/gmenu_divider_v.png') repeat-y left;
+	float: left;
+	height: auto;
+}
+.gx-sidemenu-inner ul li a {
+	color: #999;
+	text-decoration: none;
+	font-size: 16px;
+	float: left;
+	width: 100%;
+	clear: both;
+}
+#gx-sidemenu ul li.active-link {
+	background: #000 !important;
+	text-decoration: underline;
+}
+#gx-sidemenu ul li.active-link a {
+	color: #BBB;
+}
+#gx-sidemenu-tip {
+	background: rgba(0,0,0,0.9);
+	border: 1px solid #000;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius: 5px;
+	padding: 10px;
+	color: #fff;
+	font-size: 14px;
+}
+.iScrollIndicator {
+	border: 1px solid #333 !important;
+	background: rgba(100,100,100,.20) !important;
+}
+.gx-menu-open.list {
+	position: fixed;
+	top: 25px;
+	left: 25px;
+	right: auto;
+	height: 48px;
+	width: 48px;
+	background: url('images/icon-menu.png') no-repeat center center;
+	background-size: contain;
+	cursor: default;
+}
+
+#wrapper {
+	width: 80%;
+	margin: auto;
+	position: relative;
+}
+
+
+/* Icon Types */
+.icon.home {
+	background: url('images/icon-home.png') no-repeat center center;
+}
+.icon.book {
+	background: url('images/icon-book.png') no-repeat center center;
+}
+.icon.christmas {
+	background: url('images/icon-christmas.png') no-repeat center center;
+}
