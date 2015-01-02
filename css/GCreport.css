@@ -92,14 +92,16 @@ h3 {
 }
 .fact-container .pull-left {
 	border-right: 2px solid #fff;
-	margin-right: 15px;
+	margin: 0 15px 0 0;
 }
 .fact-container .pull-right {
 	border-left: 2px solid #fff;
-	margin-left: 15px;
+	margin: 0 0 0 15px;
 }
 .fact-container .full-width {
 	width: 100%;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #fff;
 	text-align: center;
 }
 .px48 {
@@ -143,12 +145,15 @@ h3 {
 /* Center text with it's related image */
 .info-text {
 	position: relative;
-	height: 480px;
+	height: 330px;
 }
 .info-wrapper {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+}
+.info-wrapper h2 {
+	margin-bottom: 0;
 }
 
 /* Image Styles */
@@ -314,16 +319,29 @@ h3 {
 }
 
 #sundays {
-	background: rgba(255,255,255,0.9);
+	background-color: rgba(255,255,255,0.9);
 	background-image: url('../img/bg-worship-set-alt.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	color: #cbcbcb; /* Light Gray */
 }
 
 #holidays {
 	background-color: #B61B12; /* Red */
 	background: url('../img/bg-christmas.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#volunteers {
+	background-color: #181818; /* Black */
+	background: url('../img/bg-volunteers.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#grace-groups {
+	background-color: #B61B12; /* Red */
+	background: url('../img/bg-grace-groups.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 }
