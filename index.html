@@ -25,6 +25,8 @@
     <script src="js/custom.js"></script>
     <script src="js/sidemenu.js"></script>
     <script src="js/iscroll.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -59,8 +61,14 @@
           clickTrigger: false,
           trigger: ".gx-menu-open.share" // class or id of trigger element
         });
-
       });
+
+      //jQuery(document).ready(function( $ ) {
+      //  $('span').counterUp({
+      //    delay: 20, // the delay time in ms
+      //    time: 1000 // the speed time in ms
+      //  });
+      //});
     </script>
     <style type="text/css">
 
@@ -162,7 +170,7 @@
             <div class="col-md-4">
               <h3>Weekly Worship</h3>
               <div class="fact-container">
-                <p class="numbers px80 full-width">2,408</p>
+                <p class="numbers px80 full-width"><span class="numbers-with-commas">2,408</span></p>
                 <p class="lead">People that attended Grace Church each week.</p>
               </div>
             </div><!-- /.col-md-4 -->
@@ -170,7 +178,7 @@
             <div class="col-md-4">
               <h3>Visitors in 2014</h3>
               <div class="fact-container">
-                <p class="numbers px80 full-width">2,408</p>
+                <p class="numbers px80 full-width"><span class="numbers-with-commas">2,408</span></p>
                 <p class="lead">Guests attended a service at Grace Church.</p>
               </div>
             </div><!-- /.col-md-4 -->
@@ -178,7 +186,7 @@
             <div class="col-md-4">
               <h3>New Gracers</h3>
               <div class="fact-container">
-                <p class="numbers px80 full-width">2,408</p>
+                <p class="numbers px80 full-width"><span class="numbers-with-commas">2,408</span></p>
                 <p class="lead">People joined Grace Church in ministry.</p>
               </div>
             </div><!-- /.col-md-4 -->
@@ -198,7 +206,7 @@
             <div class="col-md-6">
               <h3>Easter Sunday</h3>
               <div class="fact-container">
-                <p class="numbers px80 pull-left">2,408</p>
+                <p class="numbers px80 pull-left"><span class="numbers-with-commas">2,408</span></p>
                 <p class="lead">Celebrated Christ's resurrection with us. It's the biggest crowd we've ever had on an Easter Sunday. We sang, we danced, and we enjoyed the incredible presence of God.</p>
               </div>
             </div><!-- /.col-md-6 -->
@@ -206,34 +214,11 @@
             <div class="col-md-6">
               <h3>Christmas Services</h3>
               <div class="fact-container">
-                <p class="numbers px80 pull-left">2,408</p>
+                <p class="numbers px80 pull-left"><span class="numbers-with-commas">2,408</span></p>
                 <p class="lead">Joined us in worship of our Savior's birth.</p>
               </div>
             </div><!-- /.col-md-6 -->
           </div><!-- /.row -->
-
-          <!--<div class="row">
-            <div class="col-md-6 info-text">
-              <div class="info-wrapper">
-                <h1>Easter</h1>
-                <p class="lead">Some cool information about it. Rock on!!!</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <img src="img/easter.png" alt="Christmas Icon" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <img src="img/christmas-ornaments.png" alt="Christmas Icon" />
-            </div>
-            <div class="col-md-6 info-text">
-              <div class="info-wrapper">
-                <h1>Christmas</h1>
-                <p class="lead">Some cool information about it. Rock on!!!</p>
-              </div>
-            </div>
-          </div><!-- /Christmas -->
 
         </div><!-- /#holidays -->
 
@@ -256,7 +241,7 @@
           <div class="row">
           
             <div class="col-md-12">
-              <p class="lead">This year, <span class="numbers px48">2,408</span> people volunteered <span class="numbers px48">2,408</span> hours to ministering at Grace Church.</p>
+              <p class="lead">This year, <span class="numbers px48 numbers-with-commas">2,408</span> people volunteered <span class="numbers px48 numbers-with-commas">2,408</span> hours to ministering at Grace Church.</p>
             </div><!-- /.col-md-12 -->
 
           </div><!-- /.row -->
@@ -276,7 +261,7 @@
             <div class="col-md-4">
               <h3>Grace Group Members</h3>
               <div class="fact-container">
-                <p class="numbers px80 full-width">2,408</p>
+                <p class="numbers px80 full-width"><span class="numbers-with-commas">2,408</span></p>
                 <p class="lead">Gracers are involved in Grace Groups.</p>
               </div>
             </div><!-- /.col-md-4 -->
@@ -284,7 +269,7 @@
             <div class="col-md-4">
               <h3>We're all involved</h3>
               <div class="fact-container">
-                <p class="numbers px80 full-width">2,408%</p>
+                <p class="numbers px80 full-width"><span class="numbers-with-commas">2,408</span>%</p>
                 <p class="lead">The percentage of our members that are actively involved in Grace Groups.</p>
               </div>
             </div><!-- /.col-md-4 -->
@@ -292,7 +277,7 @@
             <div class="col-md-4">
               <h3>Student Grace Groups</h3>
               <div class="fact-container">
-                <p class="numbers px80 full-width">2,408</p>
+                <p class="numbers px80 full-width"><span class="numbers-with-commas">2,408</span></p>
                 <p class="lead">Students actively participate in Grace Groups. That's an incredible number.</p>
               </div>
             </div><!-- /.col-md-4 -->
@@ -322,11 +307,11 @@
           <div class="row">
           
             <div class="col-md-12">
-              <p class="lead"><span class="numbers px48">2,408</span> students attend Grace Students services on Sunday nights.</p>
+              <p class="lead"><span class="numbers px48 numbers-with-commas">2,408</span> students attend Grace Students services on Sunday nights.</p>
             </div><!-- /.col-md-12 -->
 
             <div class="col-md-12">
-              <p class="lead">What's more, <span class="numbers px48">2,408</span> students are actively involved in outreach ministries at Grace Church, at their schools, and at their workplaces.</p>
+              <p class="lead">What's more, <span class="numbers px48 numbers-with-commas">2,408</span> students are actively involved in outreach ministries at Grace Church, at their schools, and at their workplaces.</p>
             </div><!-- /.col-md-21 -->
 
           </div><!-- /.row -->
@@ -337,7 +322,7 @@
 
           <div class="row">
             <div class="col-md-12">
-              <h2>We have <span class="numbers">2,408</span> volunteers leading our <span class="numbers">2,408</span> Grace Kids in worship each week.</h2>
+              <h2>We have <span class="numbers numbers-with-commas">2,408</span> volunteers leading our <span class="numbers numbers-with-commas">2,408</span> Grace Kids in worship each week.</h2>
             </div>
           </div><!-- /.row -->
 
@@ -345,13 +330,13 @@
           
             <div class="col-md-6 info-text">
               <div class=" info-wrapper fact-container">
-                <p class="numbers px80 pull-left">2,408</p>
+                <p class="numbers px80 pull-left"><span class="numbers-with-commas">2,408</span></p>
                 <p class="lead">Children participated in Summer BreakOut this year. That's 20% more children than we had last year and the highest attendance we've ever had! SBO rocked in 2014!</p>
               </div>
             </div><!-- /.col-md-6 -->
 
             <div class="col-md-6 info-text">
-              <div class="info-wrapper fact-container">
+              <div class="info-wrapper">
                 <p class="lead">SBO logo and theme go here.</p>
               </div>
             </div><!-- /.col-md-6 -->
@@ -363,7 +348,9 @@
       </div><!-- /.wrapper -->
     </div><!-- /#scroller -->
 
-    <!-- Non-essential javascripts at the end to load the page faster -->
+    <script src="js/smoothscroll-chrome.js"></script>
+
+    <!-- Non-essential javascripts at the end to load the page faster 
     <script type="text/javascript">
       var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
       if(is_chrome){
@@ -371,7 +358,7 @@
       } else {
         document.write('<script src="js/smoothscroll.js"><\/script>');
       }
-    </script>
+    </script>-->
 
   </body>
 </html>

@@ -4,7 +4,7 @@
       $(this).click(function(e) {
         e.preventDefault();
         var targetOffset = $($(this).attr('href')).offset().top;
-        $('html').animate({scrollTop: targetOffset - 0}, 700);
+        $('html, body').animate({scrollTop: targetOffset - 0}, 700);
       });
     }
   });
