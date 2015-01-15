@@ -22,8 +22,9 @@
 /* UNIVERSAL RESETS */
 	html {
 		background: #0058a9;
+		background: #0058a9 url('images/pattern_012.png');
 		color: #fff;
-		font-family: 'Droid Serif', Georgia, serif;
+		font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
 		font-size: 16px;
 		line-height: 20px;
 	}
@@ -32,7 +33,7 @@
 		padding-left: 20px;
 		overflow-x: hidden;
 		color: #fff;
-		font-family: 'Droid Serif', Georgia, serif;
+		font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
 		font-size: 16px;
 		line-height: 20px;
 	}
@@ -43,30 +44,54 @@
 		max-width: 100%;
 	}
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
+		font-family: 'Roboto Slab', Georgia, serif;
+	}
+	h1 {
+		margin: 0;
+		padding: 20px;
+		background: #181818;
+		background: rgba(0,0,0,.4);
+		font-size: 64px;
+		text-transform: uppercase;
 	}
 	h2 {
 		max-width: 720px;
 		margin: 0 auto 25px auto;
 		font-size: 48px;
-		font-weight: 300;
+		font-weight: 700;
 		line-height: 1.4;
-		text-transform: uppercase;
 		text-shadow: 0 0 3px #181818;
 	}
 	.container {
 		width: auto;
 		margin: 0 -100%;
-		padding: 100px 100%;
+		padding: 100px 110%;
 		color: #fff;
 		text-align: center;
 		box-sizing: border-box;
 	}
 	.row {
-		margin-bottom: 25px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.row:first-of-type {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 	.row:last-of-type {
-		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.row img {
+		margin: 20px auto;
+	}
+	.row.quote {
+		background: #fff;
+		background: rgba(255,255,255,.4);
+		border-radius: 3px;
+		color: #181818;
+	}
+	.row.quote h2 {
+		text-shadow: none;
 	}
 
 /* Fact Container Styles */
@@ -111,23 +136,23 @@
 	}
 	.px48 {
 		font-size: 48px;
-		line-height: 48px;
+		line-height: 64px;
 	}
 	.px64 {
 		font-size: 64px;
-		line-height: 64px;
+		line-height: 80px;
 	}
 	.px80 {
 		font-size: 80px;
-		line-height: 80px;
+		line-height: 96px;
 	}
 	.px96 {
 		font-size: 96px;
-		line-height: 96px;
+		line-height: 112px;
 	}
 	.px112 {
 		font-size: 112px;
-		line-height: 112px;
+		line-height: 128px;
 	}
 	.fact-container p {
 		text-align: left;
@@ -163,26 +188,34 @@
 		margin-bottom: 0;
 	}
 
-
+/* CAROUSEL STYLES */
+	.carousel.slide img {
+		margin: 0;
+	}
 
 /* INDIVIDUAL SECTION STYLES */
 
 	#intro {
 		padding-top: 0;
 	}
+	#intro .row:first-of-type {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	#intro img {
+		margin: 0 auto;
+		max-width: 320px;
+	}
 
 	#sundays {
 		background-color: rgba(255,255,255,0.9);
-		background-image: url('../img/bg-worship-set-alt.jpg');
+		background-image: url('../img/bg-sundays.jpg');
 		background-size: cover;
 		background-attachment: fixed;
 	}
 
 	#holidays {
-		background-color: #B61B12; /* Red */
-		background: url('../img/bg-christmas.jpg');
-		background-size: cover;
-		background-attachment: fixed;
+		background: #181818 url('images/pattern_012.png'); /* Black */
 	}
 
 	#volunteers {
@@ -193,10 +226,7 @@
 	}
 
 	#grace-groups {
-		background-color: #B61B12; /* Red */
-		background: url('../img/bg-grace-groups.jpg');
-		background-size: cover;
-		background-attachment: fixed;
+		background: #181818 url('images/pattern_012.png'); /* Black */
 	}
 
 	#students {
@@ -211,4 +241,26 @@
 		background: url('../img/bg-children.jpg');
 		background-size: cover;
 		background-attachment: fixed;
+	}
+
+	#soar {
+		background-color: #cbcbcb; /* Blue */
+		background: url('../img/bg-soar.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	#live {
+		background-color: #B61B12; /* Red */
+		background: url('../img/bg-live.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	#ownit {
+		background: #181818 url('images/pattern_012.png'); /* Black */
+	}
+
+	#ui {
+		
 	}

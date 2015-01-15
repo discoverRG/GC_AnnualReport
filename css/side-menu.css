@@ -1,153 +1,131 @@
-/* SIDEMENU STYLES */
+/* Pure CSS Menu */
 
-#gx-sidemenu {
-	position: fixed;
-	background: #181818;
-	width: 15%;
-	min-width: 280px;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-	z-index: 99999999;
-}
-#gx-sidemenu.tiny {
-	min-width: 50px;
-	width: 70px;
-}
-#gx-sidemenu.tiny li {
-	height: 48px;
-	padding-left: 0;
-	width: 100%;
-}
-#gx-sidemenu.tiny li.divider {
-	height: 2px;
-	width: 100%;
-}
-#gx-sidemenu.tiny a .text {
-	display: none;
-}
-#gx-sidemenu.tiny li .icon {
-	width: 90% !important;
-	height: 50px !important;
-	display: inline;
-}
-#gx-sidemenu.tiny ul li .arrow {
-	right: 15%;
-}
-.gx-sidemenu-inner {
-	float: left;
-	width: 100%;
-	position: relative;
-	padding-top: 0px;
-	overflow: hidden;
-	z-index: 9999998;
-}
-.gx-sidemenu-inner div.scroll {
-	float: left;
-	width: 100%;
-	position: relative;
-	z-index: 9999999;
-}
-#gx-sidemenu .divider {
-	width: 100%;
-	height: 2px;
-	background: url('images/gmenu_divider.png') repeat-x top;
-	clear: both;
-	float: left;
-	padding: 0;
-	margin: 0 0 0px 0;
-}
-.gx-sidemenu-inner ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	float: left;
-	width: 100%;
-	padding-top: 0px;
-}
-.gx-sidemenu-inner ul li {
-	float: left;
-	width: 100%;
-	padding: 0;
-	clear: both;
-	margin: 0 !important;
-	position: relative;
-}
-.gx-sidemenu-inner ul li .icon {
-	float: left;
-	width: 20%;
-	height: 45px !important;
-	padding: 0;
+#layout,
+#menu,
+.menu-link {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
+/*
+This is the parent `<div>` that contains the menu and the content area.
+*/
+#layout {
+    position: relative;
+    padding-left: 0;
+}
+    #layout.active {
+        position: relative;
+        left: 150px;
+    }
+        #layout.active #menu {
+            left: 150px;
+            width: 150px;
+        }
 
-.gx-sidemenu-inner ul li:hover {
-	background: rgba(0,0,0,0.6);
+        #layout.active .menu-link {
+            left: 150px;
+        }
+
+/*
+The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+appears on the left side of the page.
+*/
+
+#menu {
+    margin-left: -150px; /* "#menu" width */
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000; /* so the menu or its navicon stays above all content */
+    background: #cbcbcb;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
-.gx-sidemenu-inner ul li .text {
-	width: 65%;
-	min-height: 20px;
-	padding: 12px 5% 12px 10%;
-	background: url('images/gmenu_divider_v.png') repeat-y left;
-	float: left;
-	height: auto;
-}
-.gx-sidemenu-inner ul li a {
-	color: #999;
-	text-decoration: none;
-	font-size: 16px;
-	float: left;
-	width: 100%;
-	clear: both;
-}
-#gx-sidemenu ul li.active-link {
-	background: #000 !important;
-	text-decoration: underline;
-}
-#gx-sidemenu ul li.active-link a {
-	color: #BBB;
-}
-#gx-sidemenu-tip {
-	background: rgba(0,0,0,0.9);
-	border: 1px solid #000;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-ms-border-radius: 5px;
-	padding: 10px;
-	color: #fff;
-	font-size: 14px;
-}
-.iScrollIndicator {
-	border: 1px solid #333 !important;
-	background: rgba(100,100,100,.20) !important;
-}
-.gx-menu-open.list {
-	position: fixed;
-	top: 25px;
-	left: 25px;
-	right: auto;
-	height: 48px;
-	width: 48px;
-	background: url('images/icon-menu.png') no-repeat center center;
-	background-size: contain;
-	cursor: default;
+    #menu a {
+    	display: block;
+        color: #181818;
+        border: none;
+        padding: 0.6em 0 0.6em 0.6em;
+    }
+     #menu .pure-menu,
+     #menu .pure-menu ul {
+        border: none;
+        background: transparent;
+    }
+
+    /*
+    Add that light border to separate items into groups.
+    */
+    #menu .pure-menu ul,
+    #menu .pure-menu .menu-item-divided {
+        border-top: 1px solid #333;
+        list-style-type: none;
+        padding: 0;
+
+    }
+        #menu .pure-menu li a:hover,
+        #menu .pure-menu li a:focus {
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+        }
+
+    /*
+    This styles the selected menu item `<li>`.
+    */
+    #menu .pure-menu-selected,
+    #menu .pure-menu-heading {
+        background: #181818;
+    }
+        /*
+        This styles a link within a selected menu item `<li>`.
+        */
+        #menu .pure-menu-selected a {
+            color: #fff;
+        }
+
+    /*
+    This styles the menu heading.
+    */
+    #menu .pure-menu-heading {
+    	display: block;
+        font-size: 110%;
+        color: #fff;
+        margin: 0;
+        padding: 15px 0.6em 14px;
+        text-decoration: none;
+    }
+
+/* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+/*
+The button to open/close the Menu is custom-made and not part of Pure. Here's
+how it works:
+*/
+
+/*
+`.menu-link` represents the responsive menu toggle that shows/hides on
+small screens.
+*/
+.menu-link {
+    position: fixed;
+    display: block; /* show this only on small screens */
+    top: 0;
+    left: 0; /* "#menu width" */
+    background: #181818;
+    font-size: 10px; /* change this value to increase/decrease button size */
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
 }
 
-#wrapper {
-	width: 80%;
-	margin: auto;
-	position: relative;
-}
-
-
-/* Icon Types */
-.icon.home {
-	background: url('images/icon-home.png') no-repeat center center;
-}
-.icon.book {
-	background: url('images/icon-book.png') no-repeat center center;
-}
-.icon.christmas {
-	background: url('images/icon-christmas.png') no-repeat center center;
+#layout.active .menu-link {
+    left: 150px;
 }
